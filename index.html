@@ -16,7 +16,7 @@
 		<button id="togglePlay" class="material-icons">play_arrow</button>
 	</div>
 	
-  <script src="./timer.js"></script>
+  <script src="./src/timer.js"></script>
 	<script>
 		const togglePlay = document.querySelector('#togglePlay');
 		(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();
@@ -36,7 +36,7 @@
 		});
 
 		timer.ontimerend = () => {
-			alert('times up!')
+			console.log('times up!')
 		}
 
 		document.querySelector('#timeSelector').onclick = () => {
