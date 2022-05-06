@@ -1,0 +1,25 @@
+{
+  "name": "timerjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "vite": "^2.9.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "vite --host",
+    "build": "rollup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caleb1248/timerjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caleb1248/timerjs/issues"
+  },
+  "homepage": "https://github.com/caleb1248/timerjs#readme"
+}

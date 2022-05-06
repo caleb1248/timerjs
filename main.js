@@ -54,7 +54,10 @@ class Timer {
      * @type {(hours: number, minutes: number, seconds: number) => void}
      */
     this.onupdate = (hours, minutes, seconds) => {};
-    
+		/**
+			*@type {(state) => void}
+		*/
+		this.onstatechange = (state) => {}
     /**
      * @type {string}
      */
@@ -94,12 +97,14 @@ class Timer {
 
   start() {
     this.state = "running";
+		this.onstatechange(this.state);
     this.stopTime = calculateFutureDate(this.time);
     this.interval = setInterval(() => {
       const result = subtract(this.stopTime, new Date());
       if(result == 'timesup') {
         this.onstop();
         this.state = "stopped";
+				this.onstatechange(this.state);
         clearInterval(this.interval);
         return;
       } else {
@@ -109,3 +114,4 @@ class Timer {
     }, 1000);
   }
 }
+export default Timer;
