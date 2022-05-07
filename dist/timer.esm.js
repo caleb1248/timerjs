@@ -6,12 +6,12 @@ function calculateFutureDate(time) {
   seconds = date1.getSeconds() + seconds;
   var currentDate = new Date();
   if(seconds > 60) {
-    minutes++
+    minutes++;
     seconds = seconds - 60;
   }
   if(minutes > 60) {
     hours++;
-    minutes = minutes - 60
+    minutes = minutes - 60;
   }
   return new Date (
     currentDate.getFullYear(),

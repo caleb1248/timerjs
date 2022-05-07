@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
+  "type": "module",
   "dependencies": {
-    "vite": "^2.9.8"
+    "mkdirp": "^1.0.4",
+    "rollup": "^2.72.0",
+    "rollup-plugin-minify": "^1.0.3"
   },
-  "devDependencies": {},
   "scripts": {
-    "dev": "vite --host",
-    "build": "rollup"
+    "build": "rollup --config"
   },
   "repository": {
     "type": "git",
