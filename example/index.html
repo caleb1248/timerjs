@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./timer.css">	
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Document</title>
+</head>
+<body>
+	<div id="timer">
+		<span id="time">00:00:00</span>
+		<button id="timeSelector" class="material-icons-outlined">timer</button>
+		<button id="togglePlay" class="material-icons">play_arrow</button>
+	</div>
+	
+  <script src="https://jsdelivr.net/gh/caleb1248/timerjs/dist/timer.min.js"></script>
+	<script>
+		const togglePlay = document.querySelector('#togglePlay');
+		var timer = new Timer();
+		timer.on('update', function (h, m, s) {
+			document.querySelector('#time').innerHTML = `${h<10?'0'+h:h}:${m<10?'0'+m:m}:${s<10?'0'+s:s}`;
+		});
+		
+		timer.on('stop', function(){
+			togglePlay.innerHTML = "play_arrow";
+			togglePlay.style.backgroundColor = "green";
+			togglePlay.onclick = timer.start;
+		});
+		
+		timer.on('start', function(){
+			togglePlay.innerHTML = "stop";
+			togglePlay.style.backgroundColor = "red";
+			togglePlay.onclick = timer.stop;
+		});
+
+		timer.on('timerend', function(){
+			alert('Time\'s up!')
+		});
+
+		document.querySelector('#timeSelector').onclick = () => {
+			timer.setTime (
+				parseInt(prompt("enter hours")),
+				parseInt(prompt("enter minutes")),
+				parseInt(prompt("enter seconds"))
+			);
+		}
+
+		document.querySelector('#togglePlay').onclick = timer.start;
+	</script>
+</body>
+</html>
