@@ -8,7 +8,7 @@ First link to the script
 or
 <script src="https://cdn.jsdelivr.net/gh/caleb1248/timerjs@master/dist/timer.js"></script>
 ```
-## ES6
+## ES Javascript
 ```javascript
 // import the minified version
 import Timer from 'https://cdn.jsdelivr.net/gh/caleb1248/timerjs@master/dist/timer.esm.min.js'
