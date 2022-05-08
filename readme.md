@@ -1,4 +1,4 @@
-# Timerjs: Making browser-based timers simplified
+# Timerjs: Simplifing online timers
 # How to
 First link to the script
 ## Regular javascript
@@ -83,3 +83,4 @@ timer.ontimerend = function() {
 ```
 
 # View an example [here](https://caleb.fezzle.dev/timerjs/example)
+# View the source code for the example [here](https://github.com/caleb1248/timerjs/example)
