@@ -1,5 +1,4 @@
-# Timerjs
-A timer library
+# Timerjs: Making browser-based timers simplified
 # How to
 First link to the script
 ## Regular javascript
