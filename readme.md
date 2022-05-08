@@ -5,7 +5,9 @@ First link to the script
 ## Regular javascript
 ```html
 <script src="https://cdn.jsdelivr.net/gh/caleb1248/timerjs@master/dist/timer.min.js"></script>
-or
+```
+### Or
+```html
 <script src="https://cdn.jsdelivr.net/gh/caleb1248/timerjs@master/dist/timer.js"></script>
 ```
 ## ES Javascript
