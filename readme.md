@@ -3,18 +3,19 @@
 First link to the script
 ## Regular javascript
 ```html
-<script src="https://cdn.jsdelivr.net/gh/caleb1248/timerjs@master/dist/timer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@caleb1248/timerjs@1.0.1"></script>
 ```
 ### Or
 ```html
-<script src="https://cdn.jsdelivr.net/gh/caleb1248/timerjs@master/dist/timer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@caleb1248/timerjs@1.0.1"></script>
 ```
 ## ES Javascript
 ```javascript
-// import the minified version
-import Timer from 'https://cdn.jsdelivr.net/gh/caleb1248/timerjs@master/dist/timer.esm.min.js'
-// Or the regular version
-import Timer from 'https://cdn.jsdelivr.net/gh/caleb1248/timerjs@master/dist/timer.esm.js'
+import Timer from "https://cdn.jsdelivr.net/npm/@caleb1248/timerjs@1.0.1/dist/timer.esm.js"
+```
+You can also install the timerjs on [npm](https://www.npmjs.com/package/@caleb1248/timerjs) using the following command:
+```
+npm i @caleb1248/timerjs
 ```
 # Usage:
 ```javascript
