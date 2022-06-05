@@ -85,3 +85,4 @@ timer.ontimerend = function() {
 
 # View an example [here](https://caleb.fezzle.dev/timerjs/example)
 # View the source code for the example [here](https://github.com/caleb1248/timerjs/tree/main/example)
+## I also posted a nodejs example [here](https://www.npmjs.com/package/@caleb1248/timerjs-example).
